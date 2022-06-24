@@ -1,0 +1,12 @@
+<div class="card-header">
+    <table>
+        <a class="nav-link" routerLink="/login" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Login</a>
+        <a class="nav-link" routerLink="/signup" *ngIf="!_auth.loggedIn()" routerLinkActive="active">SignUp</a>
+        <a class="nav-link" routerLink="/library" routerLinkActive="active">Books</a>
+        <a class="nav-link" routerLink="/add" *ngIf="_auth.loggedIn()" routerLinkActive="active">Add Book</a>
+        <a class="nav-link" routerLink="/" *ngIf="_auth.loggedIn()" routerLinkActive="active" (click)="logoutUser()">LogOut</a>
+
+
+        <!-- <a routerLink="/">Home</a> -->
+    </table>
+  </div>

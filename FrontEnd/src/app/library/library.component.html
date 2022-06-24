@@ -1,0 +1,13 @@
+<div class="bg">
+    <h3 class="title">www.vclibrary.com</h3>
+    <h3>{{title}}</h3>
+    <div class="pageOne" *ngFor="let i of library">
+    <div class="page" >
+        <h4 id="bname">{{i.bookName}}</h4>
+        <h3>{{i.literature}}</h3>
+        <p>{{i.story}}</p>
+        <a href="" (click)="deleteBook(i._id)" *ngIf="_auth.loggedIn()" value="delete" class="btn btn-danger">Delete</a>
+        <a routerLink="/update" class="btn btn-primary" *ngIf="_auth.loggedIn()" (click)="updateBook(i)">Update</a><br><br>
+    </div>
+    </div>
+</div>

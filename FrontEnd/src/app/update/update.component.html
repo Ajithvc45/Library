@@ -1,0 +1,22 @@
+<div class="bg">
+    <h1>{{title}}</h1>
+    <div class="page">
+      <form (ngSubmit)="updateBook()">
+        <table>
+            <tr>
+                <td>Book Name</td>
+                <td><input type="text" name="p_bname" [(ngModel)]="bookItem.bookName"></td>
+            </tr>
+            <tr>
+                <td>Literature</td>
+                <td><input type="text" name="p_aname" [(ngModel)]="bookItem.literature"></td>
+            </tr>
+            <tr>
+                <td>Story</td>
+                <td><input type="text" name="p_story" [(ngModel)]="bookItem.story"></td>
+            </tr>
+            <td><input type="submit" value="Submit"></td>
+        </table>
+      </form>
+    </div>
+</div>

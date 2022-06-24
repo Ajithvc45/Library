@@ -1,0 +1,8 @@
+a{
+    color: black;
+    float: right;
+}
+
+a:hover{
+    background-color: gray;
+}
